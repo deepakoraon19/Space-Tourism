@@ -1,56 +1,197 @@
 body{
     background-image: url(/assets/home/background-home-desktop.jpg);
 }
+.logo{
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+.top-hr{
+    position: absolute;
+    width: 32%;
+    top:60px;
+    left: 160px;
+    border-style: none;
+    height: 1px;
+    background-color: gray;
+    z-index: 1;
+}
 .nav-bar{
-
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: "Barlow Condensed";
     color: beige;
-    /* padding-top: 5%; */
-    /* background: ; */
+    top:0px;
+    margin-top: 30px;
     flex-direction: row-reverse;
     position:absolute;
     right:0px;
-    
-
-    width:50%;
-
+    backdrop-filter: blur(50px);
+    width:70%;
 }
 .Crew, .Destination, .Technology, .Home{
-    padding:2.5% 2.5% 2.5% 2.5%;
+    padding:2.5% 3.5% 2.5% 3.5%;
 }
 .Destination{
     padding-right:20%;
 }
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.top-text{
+    font-family: "Barlow Condensed";
+    font-size: 2rem;
+}
+.middle-text{
+    font-family: "Bellefair";
+    font-size: 6.5rem;
+    margin:0px;
+
+}
+.bottom-text{    
+    font-family: "Barlow";
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 .content{
     color:#fff;
     font-size: 1.5rem;
-    width:50%;
-    padding:15% 0% 0% 5%;
+    width:24%;
+    margin:20% 0% 5% 10%;
+    /* padding:2% 0% 0% 2%; */
 }
 .circle{
     position: absolute;
-    right: 10px;
+    right: 150px;
+    bottom: 150px;
     display: flex;
     background-color: white;
-    height: 250px;
-    width: 250px;
+    height: 210px;
+    width: 210px;
     border-radius: 100%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
-    -webkit-border-radius: 100%;
+    -webkit-border-radius: 100%;    
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
 .Explore{
-    /* height: 250px;
-    width: 250px; */
-    align-items: center;
-    /* padding:20%; */
-    /* margin:auto; */
-    /* text-align: center; */
-    /* padding-left: 0px; */
+    
+    font-family: "Bellefair";
+    /* align-items: center; */
+    margin:auto;
+    position: absolute;
+    bottom: 80px;
+    left:35px;
 
 }
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url(/assets/home/background-home-tablet.jpg);
+
+    }
+    .top-hr{
+        width: 0%;
+    }
+    .top-text{
+        
+        font-family: "Barlow Condensed";
+        font-size: 1.5rem;
+    }
+    .middle-text{
+        font-family: "Bellefair";
+        font-size: 6.5rem;
+        margin:0px;
+    
+    }
+    .bottom-text{    
+        font-family: "Barlow";
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .content{
+        color:#fff;
+        font-size: 1.5rem;
+        width:60%;
+        text-align: center;
+        margin:auto;
+        margin-top: 30%;
+        margin-bottom:50%;
+        /* padding:2% 0% 0% 2%; */
+    }
+    .circle{
+        position: absolute;
+        /* margin-top: ; */
+        right: 35%;
+        top:80%;
+        /* bottom: 0%; */
+        /* display: flex; */
+        background-color: white;
+        height: 210px;
+        width: 210px;
+        border-radius: 100%;       
+        -webkit-border-radius: 100%;    
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+    .Explore{
+        
+        font-family: "Bellefair";
+        color: black;
+        /* align-items: center; */
+        margin:auto;
+        position: absolute;
+        bottom: 80px;
+        left:35px;
+        text-align: center;
+        font-size: 2rem;
+    
+    }
+
+  }
+  @media only screen and (max-width: 375px){
+
+    .nav-bar{
+        display: none;
+    }
+    .logo{
+        width: 8%;
+        top: 30px;
+    left: 30px;
+}
+    }
+    .content{
+        margin-top: 40%;
+        width: 80%;
+    }
+    .top-text{
+        font-size: 1.3rem;
+    }
+    .middle-text{
+        font-size: 4rem;
+    }
+    .bottom-text{
+        font-size: 0.8rem;
+    }
+    .circle{
+        bottom: 10px;
+        right:22%;
+        height: 180px;
+        width: 180px;
+    }
+    .Explore{
+        font-size: 1.5rem;
+    }
+  }
+  
