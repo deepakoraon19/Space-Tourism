@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/home/background-home-desktop.jpg);
+    background-image: url(assets/home/background-home-desktop.jpg);
 }
 .logo{
     position: absolute;
@@ -97,7 +97,7 @@ a:link {
 }
 @media only screen and (max-width: 768px) {
     body {
-        background-image: url(/assets/home/background-home-tablet.jpg);
+        background-image: url(assets/home/background-home-tablet.jpg);
 
     }
     .top-hr{
@@ -161,7 +161,9 @@ a:link {
 
   }
   @media only screen and (max-width: 375px){
-
+    body{
+        background-image: url(assets/home/background-home-mobile.jpg);
+    }
     .nav-bar{
         display: none;
     }
