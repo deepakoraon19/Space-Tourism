@@ -1,5 +1,6 @@
 body{
     background-image: url(assets/home/background-home-desktop.jpg);
+    /* position:fixed; */
 }
 .logo{
     position: absolute;
@@ -41,11 +42,18 @@ a:link {
     text-decoration: none;
   }
 
-  a:visited {
+a:visited {
     color: white;
     background-color: transparent;
     text-decoration: none;
   }
+  a:hover {
+    color: white;
+    background-color: transparent;
+    /* text-decoration: underline; */
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;  }
 .top-text{
     font-family: "Barlow Condensed";
     font-size: 2rem;
@@ -72,7 +80,7 @@ a:link {
     position: absolute;
     right: 150px;
     bottom: 150px;
-    display: flex;
+    /* display: flex; */
     background-color: white;
     height: 210px;
     width: 210px;
@@ -187,12 +195,17 @@ a:link {
         font-size: 0.8rem;
     }
     .circle{
-        bottom: 10px;
-        right:22%;
+        position: static;
+        margin:auto;
+        margin-bottom: 10%;
+        /* bottom: 10px;
+        right:22%; */
         height: 180px;
         width: 180px;
     }
     .Explore{
+        position: static;
+        padding-top: 43%;
         font-size: 1.5rem;
     }
   }
