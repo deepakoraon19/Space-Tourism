@@ -14,7 +14,8 @@ body{
     z-index: 1;
 }
 .dropdown{
-    display:none;
+    /* display:none; */
+    visibility: hidden;
 }
 .dropdown-content{
     width: 60%;
@@ -137,39 +138,39 @@ a:visited {
     body{
         background-image: url(assets/home/background-home-mobile.jpg);
     }
-    
-    .dropdown-content{
-        display: none;
-    }
+    .logo{
+        display: inline-block;
+        width: 9%;
+        margin-top: 10px;
+        margin-left: 30px;
+    }    
     .dropdown{
-        display: block;
         position: absolute;
+        visibility:visible;
+        z-index: 1;
+        width: 8%;
+        /* height:100%; */
+        top: 11px;
         right:30px;
-        width:10%;
+        margin-left: 0px;
     }
     .dropdown-content {
-        display: none;
+        visibility: hidden;
         position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
+        right:30px;
+        top:10px;
+        z-index: 0;
+        width: 30%;
+        flex-direction: column;
+        padding-right: 1%;
+    }
+    .nav-bar{
         display: block;
-      }
-      
-      .dropdown a:hover {background-color: #ddd;}
-        .show {display: block;}
-    .logo{
-        width: 8%;
-        top: 30px;
-        left: 30px;
+    }
+    .Crew, .Destination, .Technology, .Home{
+        padding:2.5% 20% 2.5% 3.5%;
+        width:100%;
+        text-align: right;
     }
     
     .content{
