@@ -1,202 +1,289 @@
-body{
-    background-image: url(assets/home/background-home-desktop.jpg);
-    background-size: cover;
+body {
+  background-image: url(assets/home/background-home-desktop.jpg);
+  background-size: cover;
 }
-.logo{
-    margin-left: 3%;
-    margin-right: 3%;
+.logo {
+  margin-left: 3%;
+  margin-right: 3%;
 }
-.top-hr{
-    width: 32%;
-    border-style: none;
-    height: 1px;
-    background-color: gray;
-    z-index: 1;
+.top-hr {
+  width: 32%;
+  border-style: none;
+  height: 1px;
+  background-color: gray;
+  z-index: 1;
 }
-.dropdown{
-    /* display:none; */
-    visibility: hidden;
+.dropdown {
+  /* display:none; */
+  visibility: hidden;
 }
-.dropdown-content{
-    width: 60%;
-    display:flex;
-    justify-content: right;
-    align-items:baseline;
+.dropdown-content {
+  width: 60%;
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
 }
-.nav-bar{
-    display:flex;   
-    align-items:center;
-    font-size: 1.5rem;
-    font-family: "Barlow Condensed";
-    color: beige;
-    top:0px;
-    margin-top: 30px;
-    backdrop-filter: blur(50px);
+.nav-bar {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Barlow Condensed";
+  color: white;
+  top: 0px;
+  margin-top: 30px;
+  backdrop-filter: blur(50px);
+  font-weight: bold;
 }
-.Crew, .Destination, .Technology, .Home{
-    padding:2.5% 3.5% 2.5% 3.5%;
+.Crew,
+.Destination,
+.Technology,
+.Home {
+  padding: 2.5% 3.5% 2.5% 3.5%;
 }
-.Technology{
-    padding-right:15%;
+.Technology {
+  padding-right: 15%;
 }
 a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-  }
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 
 a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: white;
-    background-color: transparent;
-    padding-bottom: 15px;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;  }
-.top-text{
-    font-family: "Barlow Condensed";
-    font-size: 2rem;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
-.middle-text{
-    font-family: "Bellefair";
-    font-size: 6.5rem;
-    margin:0px;
-
+a:hover {
+  color: white;
+  background-color: transparent;
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
 }
-.bottom-text{    
-    font-family: "Barlow";
-    font-size: 1rem;
-    line-height: 1.5rem;
+.top-text {
+  font-family: "Barlow Condensed";
+  font-size: 2rem;
 }
-.content{
-    color:#fff;
-    font-size: 1.5rem;
-    width:24%;
-    margin:20% 0% 5% 10%;
+.middle-text {
+  font-family: "Bellefair";
+  font-size: 6.5rem;
+  margin: 0px;
 }
-.circle{
-    position: absolute;
-    right: 150px;
-    bottom: 150px;
-    background-color: white;
-    height: 210px;
-    width: 210px;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    -webkit-border-radius: 100%;    
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+.bottom-text {
+  font-family: "Barlow";
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
-.Explore{
-    
-    font-family: "Bellefair";
-    margin:auto;
-    position: absolute;
-    bottom: 80px;
-    left:35px;
-
+.content {
+  color: #fff;
+  font-size: 1.5rem;
+  width: 24%;
+  margin: 20% 0% 5% 10%;
+}
+.circle {
+  position: absolute;
+  right: 150px;
+  bottom: 150px;
+  background-color: white;
+  height: 210px;
+  width: 210px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.Explore {
+  font-family: "Bellefair";
+  margin: auto;
+  position: absolute;
+  bottom: 80px;
+  left: 35px;
 }
 @media only screen and (max-width: 768px) {
-    body {
-        background-image: url(assets/home/background-home-tablet.jpg);
-
-    }
-    .top-hr{
-        width: 0%;
-    }
-    .top-text{
-        font-size: 1.5rem;
-    }
-    .content{
-        width:60%;
-        text-align: center;
-        margin:auto;
-        margin-top: 30%;
-        margin-bottom:50%;
-    }
-    .circle{
-        position: static;
-        margin:auto;
-        margin-bottom: 20%;
-        height: 210px;
-        width: 210px;
-    }
-    .Explore{
-        position: static;
-        padding-top: 43%;
-        font-size: 2rem;
-    }
-
+  body {
+    background-image: url(assets/home/background-home-tablet.jpg);
   }
-  @media only screen and (max-width: 450px){
-    body{
-        background-image: url(assets/home/background-home-mobile.jpg);
-    }
-    .logo{
-        display: inline-block;
-        width: 9%;
-        margin-top: 10px;
-        margin-left: 30px;
-    }    
-    .dropdown{
-        position: absolute;
-        visibility:visible;
-        z-index: 1;
-        width: 8%;
-        /* height:100%; */
-        top: 11px;
-        right:30px;
-        margin-left: 0px;
-    }
-    .dropdown-content {
-        visibility: hidden;
-        position: absolute;
-        right:30px;
-        top:10px;
-        z-index: 0;
-        width: 30%;
-        flex-direction: column;
-        padding-right: 1%;
-    }
-    .nav-bar{
-        display: block;
-    }
-    .Crew, .Destination, .Technology, .Home{
-        padding:2.5% 20% 2.5% 3.5%;
-        width:100%;
-        text-align: right;
-    }
+  .top-hr {
+    width: 0%;
+  }
+  .top-text {
+    font-size: 1.5rem;
+  }
+  .content {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 50%;
+  }
+  .circle {
+    position: static;
+    margin: auto;
+    margin-bottom: 20%;
+    height: 210px;
+    width: 210px;
+  }
+  .Explore {
+    position: static;
+    padding-top: 43%;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body {
+    background-image: url(assets/home/background-home-mobile.jpg);
+  }
+  .logo {
+    display: inline-block;
+    width: 9%;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .dropdown {
+    position: absolute;
+    visibility: visible;
+    z-index: 1;
+    width: 8%;
+    /* height:100%; */
+    top: 11px;
+    right: 30px;
+    margin-left: 0px;
+  }
+  .dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    z-index: 0;
+    width: 30%;
+    flex-direction: column;
+    padding-right: 1%;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .Crew,
+  .Destination,
+  .Technology,
+  .Home {
+    padding: 2.5% 20% 2.5% 3.5%;
+    width: 100%;
+    text-align: right;
+  }
+
+  .content {
+    margin-top: 40%;
+    width: 80%;
+  }
+  .top-text {
+    font-size: 1.3rem;
+  }
+  .middle-text {
+    font-size: 4rem;
+  }
+  .bottom-text {
+    font-size: 0.8rem;
+  }
+  .circle {
+    position: static;
+    margin: auto;
+    margin-bottom: 10%;
+    height: 180px;
+    width: 180px;
+  }
+  .Explore {
+    position: static;
+    padding-top: 43%;
+    font-size: 1.5rem;
+  }
+}
+
+/* Destination CSS */
+.sub-headings {
+  color: white;
+  font-size: 2.3rem;
+  font-family: "Barlow Condensed";
+  font-weight: bold;
+  padding: 4% 0% 2% 5%;
+}
+.dropdown-content
+{
+    background-color: #1B1E27;
+}
+.nums{
+    color:gray;
+}
+.dest-hr{
+    margin-top:50px;
+    border-style: none;
+    height:1px;
+    background-color:gray;
     
-    .content{
-        margin-top: 40%;
-        width: 80%;
-    }
-    .top-text{
-        font-size: 1.3rem;
-    }
-    .middle-text{
-        font-size: 4rem;
-    }
-    .bottom-text{
-        font-size: 0.8rem;
-    }
-    .circle{
-        position: static;
-        margin:auto;
-        margin-bottom: 10%;
-        height: 180px;
-        width: 180px;
-    }
-    .Explore{
-        position: static;
-        padding-top: 43%;
-        font-size: 1.5rem;
-    }
+}
+.dest-img {
+  height: 4%;
+  margin-right: 10%;
+}
+.dest-contents {
+  display: flex;
+  padding: 3% 3% 3% 6%;
+ 
+}
+.texts {
+  flex-direction: column;
+  padding-right:30%;
+  /* width: 20%; */
+}
+.destination-bar {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "Barlow Condensed";
+  color: white;
+  font-weight: bold;
+}
+
+.moon,
+.mars,
+.europa,
+.Titan {
+  padding: 2.5% 3.5% 2.5% 3.5%;
+}
+.dest-head{
+    font-size: 12rem;
+    font-family:"Bellefair";
+    color:white;
+    padding: 5% 3.5% 2.5% 3.5%;
+}
+.dest-text{
+    color:#D0D6F9;
+    font-family: "Barlow";
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    padding-left:1.5%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+   
+    padding: 10px;
+    border-style:none;
+}
+.grid-item {
+    font-family: "Barlow Condensed";
+    color: white;   
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: left;
   }
-  
+  .grid-item2 {
+    font-family: "Barlow";
+    color: white;   
+    padding: 3%;
+    font-size: 2rem;
+    text-align: left;
+  }
